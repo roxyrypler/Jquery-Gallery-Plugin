@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+	  
+	  <div class="gallery" id="galleryContainer" >
+	  	  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+		  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+		  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+		  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+		  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+		  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+		  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+		  <img src="img/jQuery-Logo.jpg" class="imgs"  id="galleryImg" >
+	  </div>
+	  
+	  
+
+    
+	  <script src="jquery331min.js" ></script>
+	  <script src="JqueryGalleryPlugin.js" ></script>
+	  
+	  
+	  <script>
+	  	  $("[id=galleryImg]").gallery({
+			  borderwidth: '1px',
+			  margin: '20px',
+			  boxShadowColor: '#888888',
+			  height: '100px'
+		  });
+		  
+		  $("#galleryContainer").galleryContainer({
+			  height: '50VH',
+			  flexDirection: 'row'
+		  });
+	  
+	  
+	  </script>
+  </body>
+
+</html>
